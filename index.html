@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kremen</title>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <script src="datepicker.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy9i7tREQpxAADvdxiNAZ6FmjjyJlqXkA&callback=initMap"></script>
+    <link href="datepicker.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="ba-top-content">
+
+
+            <div class="ba-top-content__header">
+                    <!-- <div class="header__logo">
+                        <img class="logo" src="img/logo.png">
+                    </div>
+                    <div class="header__content">
+                        <div class="header__slogan">
+                            <h3 class="slogan">Ваш отель в самом Сердце Кременчуга</h3>
+                        </div>
+        
+                        <div class="header__navigation">
+                            <ul class="navigation">
+                                <li class="navigation__btn">главная</li>
+                                <li class="navigation__btn">контакты</li>
+                                <li class="navigation__btn">укр</li>
+                                <li class="navigation__btn">рус</li>
+                                <li class="navigation__btn">eng</li>
+                            </ul>
+                        </div>
+                    </div> -->
+        
+
+
+                    <div class="container-fluid p-4">
+                        <div class="row">
+                            <div class="col-lg-3 header__logo ">
+
+                            </div>
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="header__slogan">
+                                            <h3 class="slogan">Ваш отель в самом Сердце Кременчуга</h3>
+                                        </div>
+                                    </div>
+        
+                                    <div class="row text-center">
+                                        <span class="col-lg-2"></span>
+                                        <span class="navigation__btn col-lg-2 col-md-6 col-sm-6 col-xs-6">главная</span>
+                                        <span class="navigation__btn col-lg-2 col-md-6 col-sm-6 col-xs-6">контакты</span>
+                                        <span class="navigation__btn col-lg-2 col-md-4 col-sm-4 col-xs-4">укр</span>
+                                        <span class="navigation__btn col-lg-2 col-md-4 col-sm-4 col-xs-4">рус</span>
+                                        <span class="navigation__btn col-lg-2 col-md-4 col-sm-4 col-xs-4">eng</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <div class="ba-top-content__slider">
+            <img class="slider__photo" src="img/фасад-min.jpg">
+            <img class="slider__photo" src="img/hall.jpg">
+            <img class="slider__photo" src="img/room.jpg">
+            <img class="slider__photo" src="img/restourant_inside.jpg">
+            <img class="slider__photo" src="img/menu.jpg">
+            <img class="slider__photo" src="img/restourant_street.jpg">
+
+        </div>
+        <div class="ba-order">
+                <div class="ba-order__form">
+                    <div class="container-fluid">
+    
+                        <div class="row form-title">
+                            <h3 class="order-center order-title text-center col-12">Забронировать номер</h3>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-xl-1"></div>
+                            <div class="col-xl-2 col-sm-12 col-lg-6">
+    
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">заезд:</span>
+                                    </div>
+                                    <input type="text" class="form-control row-input" data-toggle="datepicker">
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-sm-12 col-lg-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">выезд:</span>
+                                    </div>
+                                    <input type="text" class="form-control row-input" data-toggle="datepicker">
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-sm-12 col-lg-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">взрослые:</span>
+                                    </div>
+                                    <input type="number" class="form-control row-input">
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-sm-12 col-lg-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">дети:</span>
+                                    </div>
+                                    <input type="number" class="form-control row-input">
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-sm-12 col-lg-12">
+                                <button class="btn btn-primary btn-block">забронировать</button>
+                            </div>
+                            <div class="col-xl-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <section class="ba-services">
+        <div class="container-fluid ba-services">
+            <div class="row ba-services__top-row">
+                <div class="ba-services__img col-lg-3 col-md-6">
+                    <img class="ba-services__photo" src="img/services/hotel.jpg">
+                    <div class="ba-services__title">
+                        <h2>об отеле</h2>
+                    </div>
+                </div>
+                <div class="ba-services__img col-lg-3 col-md-6">
+                    <img class="ba-services__photo" src="img/services/special offers.jpg">
+                    <div class="ba-services__title">
+                        <h2>номера</h2>
+                    </div>
+                </div>
+                <div class="ba-services__img col-lg-3 col-md-6">
+                    <img class="ba-services__photo" src="img/services/restourants.jpg">
+                    <div class="ba-services__title">
+                        <h2>специальные предложения</h2>
+                    </div>
+                </div>
+                <div class="ba-services__img col-lg-3 col-md-6">
+                    <img class="ba-services__photo" src="img/services/hotel.jpg">
+                    <div class="ba-services__title">
+                        <h2>бары и рестораны</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ba-services__bottom-row">
+                <div class="ba-services__img col-lg-3 col-md-6">
+                    <img class="ba-services__photo" src="img/services/conference-hall.jpg">
+                    <div class="ba-services__title">
+                        <h2>конференц-залы</h2>
+                    </div>
+                </div>
+                <div class="ba-services__img col-lg-3 col-md-6">
+                    <img class="ba-services__photo" src="img/services/joss.jpg">
+                    <div class="ba-services__title">
+                        <h2>развлекательный комплекс</h2>
+                    </div>
+                </div>
+                <div class="ba-services__img col-lg-3 col-md-6">
+                    <img class="ba-services__photo" src="img/services/иуфген фтв цуддтуыы.jpg">
+                    <div class="ba-services__title">
+                        <h2>красота и здоровье</h2>
+                    </div>
+                </div>
+                <div class="ba-services__img col-lg-3 col-md-6">
+                    <img class="ba-services__photo" src="img/services/tourists help.jpg">
+                    <div class="ba-services__title">
+                        <h2>помощь туристу</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ba-preferences">
+        <div class="pref-block container-fluid">
+            <div class="row">
+                <div class="ba-preferences__item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img class="ba-preferences__img" src="img/icons/kisspng-geolocation-symbol-computer-icons-encapsulated-pos-5ae4eb5271b507.8162072415249518904658.png">
+                    <div class="ba-preferences__description">
+                        <h2 class="preferences__title">уникальное расположение</h2>
+                    </div>
+                </div>
+                <div class="ba-preferences__item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img class="ba-preferences__img" src="img/icons/no-translate-detected_318-51138.png">
+                    <div class="ba-preferences__description">
+                        <h2 class="preferences__title">125 доступных комфортабельных номеров</h2>
+                    </div>
+                </div>
+                <div class="ba-preferences__item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img class="ba-preferences__img" src="img/icons/no-translate-detected_318-48567.png">
+                    <div class="ba-preferences__description">
+                        <h2 class="preferences__title">равлекательные комплексы на территории отеля</h2>
+                    </div>
+                </div>
+                <div class="ba-preferences__item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img class="ba-preferences__img" src="img/icons/restaurant.png">
+                    <div class="ba-preferences__description">
+                        <h2 class="preferences__title">рестораны и бары на территории отеля</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ba-services__bottom-row row">
+                <div class="ba-preferences__item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img class="ba-preferences__img" src="img/icons/car.png">
+                    <div class="ba-preferences__description">
+                        <h2 class="preferences__title">трансфер</h2>
+                    </div>
+                </div>
+                <div class="ba-preferences__item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img class="ba-preferences__img" src="img/icons/kisspng-computer-icons-web-browser-desktop-wallpaper-scala-free-high-quality-site-internet-icon-5ab11bff9d52a3.4416256215215564796444.png">
+                    <div class="ba-preferences__description">
+                        <h2 class="preferences__title">online бронирование</h2>
+                    </div>
+                </div>
+                <div class="ba-preferences__item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img class="ba-preferences__img" src="img/icons/wifi.png">
+                    <div class="ba-preferences__description">
+                        <h2 class="preferences__title">wi-fi в номерах</h2>
+                    </div>
+                </div>
+                <div class="ba-preferences__item col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img class="ba-preferences__img" src="img/icons/people.png">
+                    <div class="ba-preferences__description">
+                        <h2 class="preferences__title">высокий уровень сервиса</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ba-transfer">
+        <div class="ba-transfer__description">
+            <h3 class="ba-transfer__inform">Воспользоваться услугой заказа трансфера</h3>
+        </div>
+
+        <div type="button" class="callback-bt">
+            <div class="text-call">
+                <i class="fas fa-car"></i>
+                <span>Заказать<br>трансфер</span>
+            </div>
+        </div>
+
+    </section>
+    <section class="ba-map" id="map">
+
+    </section>
+
+    <section class="ba-footer-nav text-center">
+        <div class="ba-footer-nav__btns container-fluid">
+            <ul class="nav-btns row">
+                <li class="col-lg-3 col-md-12 col-sm-12">карта сайта</li>
+                <li class="col-lg-3 col-md-12 col-sm-12">правила пользования сайтом</li>
+                <li class="col-lg-3 col-md-12 col-sm-12">новости кременчуга</li>
+                <li class="col-lg-3 col-md-12 col-sm-12">мы на facebook</li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer">
+        <p>Гостиница Кремень, ул.Игоря Сердюка, 1, Кременчуг, 39605, Украина. Тел.: +38053792355 www.kremenhotel.com.ua</p>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
